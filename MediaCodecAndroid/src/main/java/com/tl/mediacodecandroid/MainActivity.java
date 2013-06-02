@@ -6,10 +6,17 @@ import android.view.Menu;
 
 public class MainActivity extends Activity {
 
+    private MediaCodecData mMediaCodecData;
+
+    public MainActivity() {
+        mMediaCodecData = new MediaCodecData();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mMediaCodecData.getcodecinfo();
     }
 
 
